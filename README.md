@@ -6,8 +6,8 @@ In this repository, we use interactive code via Jupyter Notebook and Python as w
 
 ## Asset Capacity OE
 The Asset Capacity OE is the simplest OE implementations investigated in the project. At a given moment in time, it only considers the spare thermal capacity of the distribution transformer (i.e., thermal capacity minus net demand of all the customers) and splits it among active customers. It is the least accurate OE approach as it does not consider voltage aspects.
-- Monitoring: At the secondary of the transformer (aggregated P and aggregated Q per phase).
-- Electrical models needed: None.
+- Required Monitoring: At the secondary of the transformer (aggregated P and aggregated Q per phase).
+- Required Electrical Models: None.
 
 For simplicity, the case study used to demonstrate the OE algorithm corresponds to a low voltage (LV) network without modelling the upstream high voltage (HV) network. Although some adaptations have been made to ensure realistic voltage fluctuations at the distribution transformer of the LV network, the results are not exactly the same as those presented in the Final Report of the project (which used an integrated HV-LV network model). Nevertheless, the behaviour of the OE algorithm and the qualitative nature of the results remain the same.
 
